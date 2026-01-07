@@ -6,4 +6,5 @@ Secondly, execute 'Setup.bat' to upgrade python and install dependency,
 Then, Open **main.py** with Python +1.X.X
 And you can now use B-shell
 # Help
+Source Code is in releases.
 Use the command help for get a idea of what each commands do.
