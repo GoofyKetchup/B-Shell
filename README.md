@@ -1,5 +1,5 @@
 # B-Shell
-A Classic **Shell created** for **basic purpose**, like **create folder/files**
+A mostly python **Shell created** for devs(Actually we are working on bases, many tools will come in the futur
 # Setup(for older version)
 Firstly, you need to **install** **_`python`_** from [the Web site](https://www.python.org),
 Secondly, execute 'Setup.bat' to upgrade python and install dependency,
