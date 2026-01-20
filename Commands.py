@@ -222,6 +222,3 @@ def reload(args):
     print("Reloading shell...")
     clear(args)
     os.execv(sys.executable, [sys.executable] + sys.argv)
-
-def reset(args):
-    os.startfile("C:/Users/YOUR_USER/Desktop/B-Shell/Tools/Reset/Reset.py")
