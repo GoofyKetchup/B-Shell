@@ -224,4 +224,4 @@ def reload(args):
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
 def reset(args):
-    os.startfile("C:/Users/bekhtim3/Desktop/Project/B-Shell/Tools/Reset/Reset.py")
+    os.startfile("C:/Users/YOUR_USER/Desktop/B-Shell/Tools/Reset/Reset.py")
