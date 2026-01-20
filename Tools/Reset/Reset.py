@@ -1,24 +1,27 @@
+import os
+import shutil
+
 def reset():
 
     print("Reseting Shell to factory source code")
 
-    with open("C:/Users/YOUR_USER/Desktop/Project/B-Shell/Tools/Reset/ResetData/Main.py", "r") as file:
-        R3 = file.read()
-        print("30% finished")
+    RESET_DIR = os.path.dirname(os.path.abspath(__file__))
 
-    with open("C:/Users/YOUR_USER/Desktop/Project/B-Shell/Main.py", "w") as file:
-        file.write(R3)
-        print("45% finished")
+    ROOT_DIR = os.path.abspath(os.path.join(RESET_DIR, "..", ".."))
 
-    with open("C:/Users/YOUR_USER/Desktop/Project/B-Shell/Tools/Reset/ResetData/Commands.py", "r") as file:
-        R3 = file.read()
-        print("75% finished")
+    clean_main = os.path.join(RESET_DIR, "Main.py")
+    clean_commands = os.path.join(RESET_DIR, "Commands.py")
 
-    with open("C:/Users/YOUR_USER/Desktop/Project/B-Shell/Commands.py", "w") as file:
-        file.write(R3)
-        print("90% finished")
+    target_main = os.path.join(RESET_DIR, "Main.py")
+    target_commands = os.path.join(RESET_DIR, "Commands.py")
+
+    print("15% finished...")
+
+    shutil.copyfile(clean_main, target_main)
+    print("55% finished...")
+    shutil.copyfile(clean_commands, target_commands)
+    print("67% finished...")
 
     print("Finishing reset...")
     print("Shell succefully reset!")
-
     input("Press Enter to exit...")
