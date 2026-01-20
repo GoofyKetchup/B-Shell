@@ -21,7 +21,6 @@ COMMANDS = {
     "ls": Commands.ls,
     "clear": Commands.clear,
     "reload": Commands.reload,
-    "reset": Commands.reset,
 }
 
 def bshell_loop():
@@ -53,4 +52,5 @@ def bshell_loop():
             print("Error catched: ", e, ".")
 
 if __name__ == "__main__":
+
     bshell_loop()
